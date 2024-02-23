@@ -1,4 +1,5 @@
 import NavigationBar from "./layout/nav-bar";
+import Owners from "./owners/Owners";
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
 
       <div>
           <NavigationBar/>
+          <Owners/>
       </div>
     </div>
   );
