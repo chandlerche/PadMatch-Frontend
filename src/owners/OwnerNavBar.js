@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function OwnerNavBar() {
   return (
@@ -14,7 +15,7 @@ export default function OwnerNavBar() {
                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                 <button className="btn btn-outline-success" type="submit">Search</button>
             </form>
-            <button type="button" className="d-flex me-2 btn btn-primary">Add New Owner</button>
+            <Link className="d-flex me-2 btn btn-primary" to="/addowner">Add New Owner</Link>
             <button type="button" className="d-flex btn btn-secondary">Filter</button>
             </div>
         </div>
