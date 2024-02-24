@@ -14,7 +14,8 @@ https://react-bootstrap.netlify.app/
 
 
 # Potential Improvements
-Further design and improvement of the addnewowner form, e.g. adding option-based inputs, etc.
+1. Add functionality: if the form lacks the necessary information, it will not be submitted and the user will be prompted.
+2. Further design and improvement of the addnewowner form, e.g. adding option-based inputs, etc.
 
 
 
