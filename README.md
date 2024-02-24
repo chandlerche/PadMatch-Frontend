@@ -1,3 +1,28 @@
+
+# Frontend Tech Stack
+React
+Redux
+React Routing
+Axios
+Bootstrap
+
+
+# CSS reference
+https://getbootstrap.com/
+https://react-bootstrap.netlify.app/
+
+
+
+# Potential Improvements
+Further design and improvement of the addnewowner form, e.g. adding option-based inputs, etc.
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
