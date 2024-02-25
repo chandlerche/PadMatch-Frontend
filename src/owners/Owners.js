@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import OwnerNavBar from './OwnerNavBar'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export default function Owners() {
 
@@ -55,7 +56,7 @@ export default function Owners() {
                                     <td>{owner.email}</td>
                                     <td>
                                         <button className='btn btn-primary mx-2'>View</button>
-                                        <button className='btn btn-outline-primary mx-2'>Edit</button>
+                                        <Link to={`/editowner/${owner.id}`} className='btn btn-outline-primary mx-2'>Edit</Link>
                                         <button className='btn btn-danger'>Delete</button>
                                     </td>
                                 </tr>
