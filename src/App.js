@@ -3,6 +3,7 @@ import NavigationBar from "./layout/nav-bar";
 import Owners from "./owners/Owners";
 import AddNewOwner from "./owners/AddNewOwner";
 import EditOwner from "./owners/EditOwner";
+import ViewOwner from "./owners/ViewOwner";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/" element={<Owners/>} />
           <Route exact path="/addowner" element={<AddNewOwner/>} />
           <Route exact path="/editowner/:id" element={<EditOwner/>} />
+          <Route exact path="/viewowner/:id" element={<ViewOwner/>} />
         </Routes>
       </Router>
     </div>

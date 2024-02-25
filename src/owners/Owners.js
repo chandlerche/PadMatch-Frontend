@@ -62,7 +62,7 @@ export default function Owners() {
                                     <td>{owner.phone}</td>
                                     <td>{owner.email}</td>
                                     <td>
-                                        <button className='btn btn-primary mx-2'>View</button>
+                                        <Link to={`/viewowner/${owner.id}`} className='btn btn-primary mx-2'>View</Link>
                                         <Link to={`/editowner/${owner.id}`} className='btn btn-outline-primary mx-2'>Edit</Link>
                                         <button onClick={()=>deleteOwner(owner.id)} className='btn btn-danger'>Delete</button>
                                     </td>
