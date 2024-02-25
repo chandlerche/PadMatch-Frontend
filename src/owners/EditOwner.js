@@ -57,7 +57,7 @@ export default function EditOwner() {
         <div className='row'>
             <div className='col-md-6 offset-md-3 border rounded p-4 mt-2 shadow'>
                 {/* New Owner Form*/}
-                <h2>Edit Owner</h2>
+                <h2 className='text-center m-4'>Edit Owner</h2>
 
                 <form onSubmit={(e)=>onSubmit(e)}>
 
