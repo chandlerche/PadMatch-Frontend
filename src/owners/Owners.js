@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import OwnerNavBar from './OwnerNavBar'
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 export default function Owners() {
 
     const [owners, setOwners] = useState([])
+
+    const {id} = useParams();
 
     // useEffect: whenever the page loads, this happens
     useEffect(() => {
@@ -16,6 +18,11 @@ export default function Owners() {
     const loadOwners = async () => {
         const result = await axios.get("http://localhost:8080/owners");
         setOwners(result.data);
+    }
+
+    const deleteOwner = async (id) => {
+        await axios.delete(`http://localhost:8080/owners/${id}`)
+        loadOwners();
     }
 
 
@@ -57,7 +64,7 @@ export default function Owners() {
                                     <td>
                                         <button className='btn btn-primary mx-2'>View</button>
                                         <Link to={`/editowner/${owner.id}`} className='btn btn-outline-primary mx-2'>Edit</Link>
-                                        <button className='btn btn-danger'>Delete</button>
+                                        <button onClick={()=>deleteOwner(owner.id)} className='btn btn-danger'>Delete</button>
                                     </td>
                                 </tr>
                             ))
